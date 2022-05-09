@@ -1,0 +1,136 @@
+EDAD PARA VOTAR
+import java.util.Scanner;
+
+public class EdadParaVotar{
+
+     public static void main(String []args){
+        int Edad;
+        //Scanner leer=new Scanner (System.in);
+        System.out.print("ingresa su edad: ");
+        //Edad = leer.nextInt();
+        Edad=18;
+        if (Edad<18){
+            System.out.println("Eres menor de edad");
+        }
+        
+        if (Edad>=18){
+            System.out.println("Si puedes votar");
+        }
+     }
+}
+------------------------------------------------------------
+import java.util.Scanner;
+
+public class SueldoTrabajador{
+
+     public static void main(String []args){
+        int horas, pago, sueldo, horasExtras;
+        //Scanner leer=new Scanner (System.in);
+        //System.out.print("ingresa horas trabajadas: ");
+        //horas = leer.nextInt();
+        //pago = leer.nextInt();
+        horas=40;
+        pago=10;
+        if (horas<=40){
+            sueldo = horas*pago;
+        }
+        else {
+            horasExtras = horas - 40;
+            sueldo = (40*pago)+(horasExtras*pago*2);
+        }
+        System.out.print("Sueldo: " + sueldo);
+     }
+}
+-----------------------------------------------------------------------
+import java.util.Scanner;
+
+public class SueldoTrabajador{
+
+     public static void main(String []args){
+        int presupuesto;
+        //Scanner leer=new Scanner (System.in);
+        //System.out.print("ingresa tu presupuesto: ");
+        //presupuesto = leer.nextInt();
+        presupuesto=9;
+        if (presupuesto <=10){
+            System.out.print("El regalo que puedes comprar es tarjeta");
+        }
+        
+        if (presupuesto > 10 && presupuesto <=100){
+            System.out.print("El regalo que puedes comprar es chocolates");
+        }
+        
+        if (presupuesto >100 && presupuesto <=250){
+            System.out.print("El regalo que puedes comprar son flores");
+        }
+        
+        if (presupuesto > 250){
+            System.out.print("El regalo que puedes comprar es un anillo");
+        }
+     }
+}
+----------------------------------------------------------------------------------
+import java.util.Scanner;
+
+public class SueldoTrabajador{
+
+     public static void main(String []args){
+        
+        int horas, cobro;
+        //Scanner leer=new Scanner (System.in);
+        //System.out.print("ingresa las horas: ");
+        //horas = leer.nextInt();
+        horas = 3;
+        cobro = 0;
+        if (horas <=2){
+             cobro = horas*5;
+        }
+        
+        if (horas > 2 && horas <=5){
+             cobro = 2*5+(horas-2)*4;
+        }
+        if (horas > 5 && horas <=10){
+             cobro = 2*5+3*4+(horas-5)*3;
+        }
+        
+        if (horas > 10){
+             cobro = 2*5+3*4+3*5+(horas-10)*2;
+        }
+        
+        System.out.print("Monto total de cobro: " + cobro);
+     }
+}
+--------------------------------------------------------------------
+import java.util.Scanner;
+
+public class SueldoTrabajador{
+
+     public static void main(String []args){
+        
+        String nombre1, nombre2, nombre3;
+        int edad1, edad2, edad3;
+        //Scanner leer=new Scanner (System.in);
+        //System.out.print("ingresa la edad numero 1: ");
+        //edad1 = leer.nextInt();
+        nombre1 = "Juan Quispe";
+        nombre2 = " Manual Turpo";
+        nombre3 = "Jesus Yapo";
+        edad1 = 13;
+        edad2 = 8;
+        edad3 = 9;
+        
+        if (edad1 < edad2){
+             if(edad1 < edad3){
+                 System.out.print("El nombre del menor es: " + nombre1 + " " + edad1);
+             }
+             else {
+                 System.out.print("El nombre del menor es: " + nombre3 + " " + edad3);
+             }
+        }
+        else {
+            System.out.print("El nombre del menor es: " + nombre2 + " " + edad2);
+        }
+        
+     }
+}
+----------------------------------------------------------------------------------------
